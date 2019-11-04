@@ -19,14 +19,56 @@
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm//vega-embed@4"
         ></script>
+        
     </head>
     <body>
+        <!-- <script>
+            document.querySelector('.reality')
+        </script> -->
         <div class="container">
             <div class="row">
                 <div
                     style="border-bottom:2px solid #494949;margin-bottom:30px;"
                 >
                     <h1>Procrastination Formula</h1>
+                </div>
+                <div id="intro">
+                    <img src="img/formula.svg" />
+                    <p>Coined by Piers Steel</p>
+                    <a
+                        href="https://www.njlifehacks.com/the-procrastination-equation-piers-steel-summary/)"
+                        >Original Source</a
+                    >
+                </div>
+                <br />
+                <div>
+                    <p>
+                        The formula illustrates the four main factors that
+                        interferring with people's procrastination:
+                    </p>
+                    <ul>
+                        <li>
+                            Expectancy: the perceived odds of getting a reward
+                            and whether we expect success or failure
+                        </li>
+                        <li>
+                            Value: the pleasantness of doing a task, and the
+                            size of its reward
+                        </li>
+                        <li>
+                            Impulsiveness: the tendency to get distracted or
+                            lose focus on a task
+                        </li>
+                        <li>
+                            Delay: the time between the present and a task's
+                            reward or completion
+                        </li>
+                    </ul>
+                    <p>
+                        By creating the initial interactive illustration of the
+                        formula, we can see how the formula help us visualize
+                        our real procrastination behavior.
+                    </p>
                 </div>
                 <div id="vis"></div>
                 <script type="text/javascript">
@@ -38,6 +80,52 @@
                         .then(function(result) {})
                         .catch(console.error);
                 </script>
+                <div class="description">
+                    <p class="ideal">
+                        In the ideal state, we would only work on the tasks as
+                        we have expected to accomplish them and have some value
+                        gained after completion.
+                        <br />
+                        Thus, as depicted by the purple line in ideal state, we
+                        will work on building portfolio and doing homework.
+                    </p>
+                    <p class="ideal">
+                        As we consider building a portfolio give us higher
+                        value, we would start building from today, until when
+                        the delay of doing homework gets shorter because the
+                        deadline approaches, and we have higher motivation to do
+                        homework. Once we passed the deadline for homework, we
+                        would then go back to work on the portfolio to get the
+                        expected high value return.
+                    </p>
+
+                    <p class="reality">
+                        Yet in reality, we need to take all the temptations that
+                        we have surrounded by us in consideration as well. On
+                        the graph, I used texting friends and watching Netflix
+                        as the constant temptation, which always have the stable
+                        motivation(same impulsiveness and pleasure to do)
+                        throughout.
+                    </p>
+                    <p class="reality">
+                        Because we are going to do the thing that we are most motivated to do. We can see that the procedure that we will proceed is actually:
+                        <ol>
+                            <li>Texting with friends <br>
+                                --->Deadline is far away. Our impulsiveness to get distracted is high.</li>
+                            <li>Waching Netflix <br>
+                                --->Possibly a show recommended by a friend, value drives the motivation high.</li>
+                            <li>Rushing to do homework in the short amount time before deadline<br>
+                                --->Delay gets super small, expectancy of completion gets super high)</li>
+                            <li>Watching some more Netflix after the deadline to relax <br>
+                                --->The delay again is large as deadline is far away, and the pleasure to build portfolio is lower than watching Netflix).</li>
+                            <li>Building portfolio <br>
+                                --->Job application season is here, must have something out.</li>
+                        </ol>
+                    </p>
+                    <p class = 'reality'>
+                        By showing the levels of motivation, we can easily see how our behavior is driven by motivation, and the text explains why we do so. <br>(The interaction of manipulating the variables is yet to come).
+                    </p>
+                </div>
             </div>
         </div>
     </body>
