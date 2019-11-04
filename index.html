@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Procrastination Formula</title>
+        <link rel="stylesheet" href="css/skeleton.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm//vega@5"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm//vega-lite@3.4.0"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm//vega-embed@4"
+        ></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div
+                    style="border-bottom:2px solid #494949;margin-bottom:30px;"
+                >
+                    <h1>Procrastination Formula</h1>
+                </div>
+                <div id="vis"></div>
+                <script type="text/javascript">
+                    let jsonSpec = "data/procrastination_visual.json";
+                    vegaEmbed("#vis", jsonSpec, {
+                        theme: "latimes",
+                        renderer: "svg"
+                    })
+                        .then(function(result) {})
+                        .catch(console.error);
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6150 @@
+{
+  "config": {
+    "view": {
+      "width": 400,
+      "height": 300
+    },
+    "mark": {
+      "tooltip": null
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-17cab3c0446de8371ae1809f198f7cfd"
+      },
+      "mark": "line",
+      "encoding": {
+        "color": {
+          "condition": {
+            "type": "nominal",
+            "field": "variable",
+            "selection": "selector036"
+          },
+          "value": "grey"
+        },
+        "opacity": {
+          "condition": {
+            "value": 1,
+            "selection": "selector035"
+          },
+          "value": 0.6
+        },
+        "size": {
+          "condition": {
+            "value": 4,
+            "selection": "selector035"
+          },
+          "value": 1.5
+        },
+        "tooltip": {
+          "type": "nominal",
+          "field": "variable"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "time",
+          "title": "Time to future"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "value",
+          "title": "Motivation level"
+        }
+      },
+      "selection": {
+        "selector035": {
+          "type": "single",
+          "empty": "none",
+          "on": "mouseover",
+          "nearest": true
+        },
+        "selector036": {
+          "type": "single",
+          "on": "click",
+          "nearest": true
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-d91b6c1c9a1db992decb70e2557feecf"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "gray"
+      },
+      "encoding": {
+        "x": {
+          "type": "quantitative",
+          "field": "deadline"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-4c421de0c46a5211e78ad7835a880907"
+      },
+      "mark": "line",
+      "encoding": {
+        "color": {
+          "condition": {
+            "value": "purple",
+            "selection": "Comparison"
+          },
+          "value": "grey"
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "time",
+          "title": "Time to future"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "value",
+          "title": "Motivation level"
+        }
+      },
+      "selection": {
+        "Comparison": {
+          "type": "single",
+          "fields": [
+            "variable"
+          ],
+          "init": {
+            "variable": "ideal"
+          },
+          "bind": {
+            "input": "radio",
+            "options": [
+              "ideal",
+              "reality"
+            ],
+            "name": "Select State: "
+          },
+          "on": "keyup",
+          "clear": "false"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "selection": "Comparison"
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.4.0.json",
+  "datasets": {
+    "data-17cab3c0446de8371ae1809f198f7cfd": [
+      {
+        "time": 0,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 0.201005025,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 0.40201005,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 0.603015075,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 0.804020101,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 1.005025126,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 1.206030151,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 1.407035176,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 1.608040201,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 1.8090452259999998,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 2.010050251,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 2.2110552759999997,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 2.412060302,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 2.6130653269999997,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 2.814070352,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 3.015075377,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 3.216080402,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 3.417085427,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 3.6180904519999997,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 3.819095477,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 4.020100503,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 4.221105528,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 4.422110553,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 4.623115578,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 4.824120603,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 5.0251256280000005,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 5.226130653,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 5.427135678,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 5.628140704,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 5.8291457289999995,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 6.030150754,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 6.231155779,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 6.432160804,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 6.633165829,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 6.834170854,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 7.035175879,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 7.236180905,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 7.43718593,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 7.638190955,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 7.83919598,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 8.040201005,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 8.24120603,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 8.442211055,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 8.64321608,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 8.844221106,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 9.045226131,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 9.246231156,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 9.447236181000001,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 9.648241206,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 9.849246231,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 10.05025126,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 10.25125628,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 10.45226131,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 10.65326633,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 10.85427136,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 11.05527638,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 11.25628141,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 11.45728643,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 11.65829146,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 11.85929648,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 12.06030151,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 12.26130653,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 12.46231156,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 12.66331658,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 12.86432161,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 13.06532663,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 13.26633166,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 13.46733668,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 13.66834171,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 13.86934673,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 14.07035176,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 14.27135678,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 14.47236181,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 14.67336683,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 14.87437186,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 15.07537688,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 15.27638191,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 15.47738693,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 15.67839196,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 15.87939698,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 16.08040201,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 16.28140704,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 16.48241206,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 16.68341709,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 16.88442211,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 17.08542714,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 17.28643216,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 17.48743719,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 17.68844221,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 17.88944724,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 18.09045226,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 18.29145729,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 18.49246231,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 18.69346734,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 18.89447236,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 19.09547739,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 19.29648241,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 19.49748744,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 19.69849246,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 19.89949749,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 20.10050251,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 20.30150754,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 20.50251256,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 20.70351759,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 20.90452261,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 21.10552764,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 21.30653266,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 21.50753769,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 21.70854271,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 21.90954774,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 22.11055276,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 22.31155779,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 22.51256281,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 22.71356784,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 22.91457286,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 23.11557789,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 23.31658291,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 23.51758794,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 23.71859296,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 23.91959799,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 24.12060302,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 24.32160804,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 24.52261307,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 24.72361809,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 24.92462312,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 25.12562814,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 25.32663317,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 25.52763819,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 25.72864322,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 25.92964824,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 26.13065327,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 26.33165829,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 26.53266332,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 26.73366834,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 26.93467337,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 27.13567839,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 27.33668342,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 27.53768844,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 27.73869347,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 27.93969849,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 28.14070352,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 28.34170854,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 28.54271357,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 28.74371859,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 28.94472362,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 29.14572864,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 29.34673367,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 29.54773869,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 29.74874372,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 29.94974874,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 30.15075377,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 30.35175879,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 30.55276382,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 30.75376884,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 30.95477387,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 31.15577889,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 31.35678392,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 31.55778894,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 31.75879397,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 31.95979899,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 32.16080402,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 32.36180905,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 32.56281407,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 32.7638191,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 32.96482412,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 33.16582915,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 33.36683417,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 33.5678392,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 33.76884422,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 33.96984925,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 34.17085427,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 34.3718593,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 34.57286432,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 34.77386935,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 34.97487437,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 35.1758794,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 35.37688442,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 35.57788945,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 35.77889447,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 35.9798995,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 36.18090452,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 36.38190955,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 36.58291457,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 36.7839196,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 36.98492462,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 37.18592965,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 37.38693467,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 37.58793970000001,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 37.78894472,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 37.98994975,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 38.19095477,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 38.3919598,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 38.59296482,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 38.79396985,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 38.99497487,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 39.1959799,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 39.39698492,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 39.59798995,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 39.79899497,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 40,
+        "variable": "texting_friends",
+        "value": 9
+      },
+      {
+        "time": 0,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 0.201005025,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 0.40201005,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 0.603015075,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 0.804020101,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 1.005025126,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 1.206030151,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 1.407035176,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 1.608040201,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 1.8090452259999998,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 2.010050251,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 2.2110552759999997,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 2.412060302,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 2.6130653269999997,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 2.814070352,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 3.015075377,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 3.216080402,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 3.417085427,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 3.6180904519999997,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 3.819095477,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 4.020100503,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 4.221105528,
+        "variable": "watching_netflix",
+        "value": null
+      },
+      {
+        "time": 4.422110553,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 4.623115578,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 4.824120603,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 5.0251256280000005,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 5.226130653,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 5.427135678,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 5.628140704,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 5.8291457289999995,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 6.030150754,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 6.231155779,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 6.432160804,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 6.633165829,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 6.834170854,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 7.035175879,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 7.236180905,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 7.43718593,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 7.638190955,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 7.83919598,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 8.040201005,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 8.24120603,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 8.442211055,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 8.64321608,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 8.844221106,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 9.045226131,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 9.246231156,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 9.447236181000001,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 9.648241206,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 9.849246231,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 10.05025126,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 10.25125628,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 10.45226131,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 10.65326633,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 10.85427136,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 11.05527638,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 11.25628141,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 11.45728643,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 11.65829146,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 11.85929648,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 12.06030151,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 12.26130653,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 12.46231156,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 12.66331658,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 12.86432161,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 13.06532663,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 13.26633166,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 13.46733668,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 13.66834171,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 13.86934673,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 14.07035176,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 14.27135678,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 14.47236181,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 14.67336683,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 14.87437186,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 15.07537688,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 15.27638191,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 15.47738693,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 15.67839196,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 15.87939698,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 16.08040201,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 16.28140704,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 16.48241206,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 16.68341709,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 16.88442211,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 17.08542714,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 17.28643216,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 17.48743719,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 17.68844221,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 17.88944724,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 18.09045226,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 18.29145729,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 18.49246231,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 18.69346734,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 18.89447236,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 19.09547739,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 19.29648241,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 19.49748744,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 19.69849246,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 19.89949749,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 20.10050251,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 20.30150754,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 20.50251256,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 20.70351759,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 20.90452261,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 21.10552764,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 21.30653266,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 21.50753769,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 21.70854271,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 21.90954774,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 22.11055276,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 22.31155779,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 22.51256281,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 22.71356784,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 22.91457286,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 23.11557789,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 23.31658291,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 23.51758794,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 23.71859296,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 23.91959799,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 24.12060302,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 24.32160804,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 24.52261307,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 24.72361809,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 24.92462312,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 25.12562814,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 25.32663317,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 25.52763819,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 25.72864322,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 25.92964824,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 26.13065327,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 26.33165829,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 26.53266332,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 26.73366834,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 26.93467337,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 27.13567839,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 27.33668342,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 27.53768844,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 27.73869347,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 27.93969849,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 28.14070352,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 28.34170854,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 28.54271357,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 28.74371859,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 28.94472362,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 29.14572864,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 29.34673367,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 29.54773869,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 29.74874372,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 29.94974874,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 30.15075377,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 30.35175879,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 30.55276382,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 30.75376884,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 30.95477387,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 31.15577889,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 31.35678392,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 31.55778894,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 31.75879397,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 31.95979899,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 32.16080402,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 32.36180905,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 32.56281407,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 32.7638191,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 32.96482412,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 33.16582915,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 33.36683417,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 33.5678392,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 33.76884422,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 33.96984925,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 34.17085427,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 34.3718593,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 34.57286432,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 34.77386935,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 34.97487437,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 35.1758794,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 35.37688442,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 35.57788945,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 35.77889447,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 35.9798995,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 36.18090452,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 36.38190955,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 36.58291457,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 36.7839196,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 36.98492462,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 37.18592965,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 37.38693467,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 37.58793970000001,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 37.78894472,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 37.98994975,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 38.19095477,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 38.3919598,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 38.59296482,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 38.79396985,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 38.99497487,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 39.1959799,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 39.39698492,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 39.59798995,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 39.79899497,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 40,
+        "variable": "watching_netflix",
+        "value": 14
+      },
+      {
+        "time": 0,
+        "variable": "doing_homework",
+        "value": 3
+      },
+      {
+        "time": 0.201005025,
+        "variable": "doing_homework",
+        "value": 3.024413858
+      },
+      {
+        "time": 0.40201005,
+        "variable": "doing_homework",
+        "value": 3.049423752
+      },
+      {
+        "time": 0.603015075,
+        "variable": "doing_homework",
+        "value": 3.075044234
+      },
+      {
+        "time": 0.804020101,
+        "variable": "doing_homework",
+        "value": 3.101290212
+      },
+      {
+        "time": 1.005025126,
+        "variable": "doing_homework",
+        "value": 3.1281769539999997
+      },
+      {
+        "time": 1.206030151,
+        "variable": "doing_homework",
+        "value": 3.1557201060000004
+      },
+      {
+        "time": 1.407035176,
+        "variable": "doing_homework",
+        "value": 3.183935692
+      },
+      {
+        "time": 1.608040201,
+        "variable": "doing_homework",
+        "value": 3.21284013
+      },
+      {
+        "time": 1.8090452259999998,
+        "variable": "doing_homework",
+        "value": 3.242450237
+      },
+      {
+        "time": 2.010050251,
+        "variable": "doing_homework",
+        "value": 3.27278324
+      },
+      {
+        "time": 2.2110552759999997,
+        "variable": "doing_homework",
+        "value": 3.3038567889999997
+      },
+      {
+        "time": 2.412060302,
+        "variable": "doing_homework",
+        "value": 3.335688963
+      },
+      {
+        "time": 2.6130653269999997,
+        "variable": "doing_homework",
+        "value": 3.3682982839999998
+      },
+      {
+        "time": 2.814070352,
+        "variable": "doing_homework",
+        "value": 3.401703724
+      },
+      {
+        "time": 3.015075377,
+        "variable": "doing_homework",
+        "value": 3.435924719
+      },
+      {
+        "time": 3.216080402,
+        "variable": "doing_homework",
+        "value": 3.4709811810000004
+      },
+      {
+        "time": 3.417085427,
+        "variable": "doing_homework",
+        "value": 3.506893507
+      },
+      {
+        "time": 3.6180904519999997,
+        "variable": "doing_homework",
+        "value": 3.54368259
+      },
+      {
+        "time": 3.819095477,
+        "variable": "doing_homework",
+        "value": 3.581369838
+      },
+      {
+        "time": 4.020100503,
+        "variable": "doing_homework",
+        "value": 3.6199771760000004
+      },
+      {
+        "time": 4.221105528,
+        "variable": "doing_homework",
+        "value": 3.6595270689999997
+      },
+      {
+        "time": 4.422110553,
+        "variable": "doing_homework",
+        "value": 3.7000425260000003
+      },
+      {
+        "time": 4.623115578,
+        "variable": "doing_homework",
+        "value": 3.741547123
+      },
+      {
+        "time": 4.824120603,
+        "variable": "doing_homework",
+        "value": 3.7840650069999997
+      },
+      {
+        "time": 5.0251256280000005,
+        "variable": "doing_homework",
+        "value": 3.8276209160000003
+      },
+      {
+        "time": 5.226130653,
+        "variable": "doing_homework",
+        "value": 3.8722401939999997
+      },
+      {
+        "time": 5.427135678,
+        "variable": "doing_homework",
+        "value": 3.9179487999999996
+      },
+      {
+        "time": 5.628140704,
+        "variable": "doing_homework",
+        "value": 3.964773329
+      },
+      {
+        "time": 5.8291457289999995,
+        "variable": "doing_homework",
+        "value": 4.0127410260000005
+      },
+      {
+        "time": 6.030150754,
+        "variable": "doing_homework",
+        "value": 4.061879799
+      },
+      {
+        "time": 6.231155779,
+        "variable": "doing_homework",
+        "value": 4.112218239
+      },
+      {
+        "time": 6.432160804,
+        "variable": "doing_homework",
+        "value": 4.163785635
+      },
+      {
+        "time": 6.633165829,
+        "variable": "doing_homework",
+        "value": 4.21661199
+      },
+      {
+        "time": 6.834170854,
+        "variable": "doing_homework",
+        "value": 4.27072804
+      },
+      {
+        "time": 7.035175879,
+        "variable": "doing_homework",
+        "value": 4.326165272
+      },
+      {
+        "time": 7.236180905,
+        "variable": "doing_homework",
+        "value": 4.38295594
+      },
+      {
+        "time": 7.43718593,
+        "variable": "doing_homework",
+        "value": 4.441133087
+      },
+      {
+        "time": 7.638190955,
+        "variable": "doing_homework",
+        "value": 4.500730563
+      },
+      {
+        "time": 7.83919598,
+        "variable": "doing_homework",
+        "value": 4.561783043999999
+      },
+      {
+        "time": 8.040201005,
+        "variable": "doing_homework",
+        "value": 4.624326051000001
+      },
+      {
+        "time": 8.24120603,
+        "variable": "doing_homework",
+        "value": 4.688395974
+      },
+      {
+        "time": 8.442211055,
+        "variable": "doing_homework",
+        "value": 4.754030091000001
+      },
+      {
+        "time": 8.64321608,
+        "variable": "doing_homework",
+        "value": 4.82126659
+      },
+      {
+        "time": 8.844221106,
+        "variable": "doing_homework",
+        "value": 4.8901445919999995
+      },
+      {
+        "time": 9.045226131,
+        "variable": "doing_homework",
+        "value": 4.960704171000001
+      },
+      {
+        "time": 9.246231156,
+        "variable": "doing_homework",
+        "value": 5.032986382
+      },
+      {
+        "time": 9.447236181000001,
+        "variable": "doing_homework",
+        "value": 5.10703328
+      },
+      {
+        "time": 9.648241206,
+        "variable": "doing_homework",
+        "value": 5.1828879489999995
+      },
+      {
+        "time": 9.849246231,
+        "variable": "doing_homework",
+        "value": 5.260594523
+      },
+      {
+        "time": 10.05025126,
+        "variable": "doing_homework",
+        "value": 5.340198214
+      },
+      {
+        "time": 10.25125628,
+        "variable": "doing_homework",
+        "value": 5.421745337999999
+      },
+      {
+        "time": 10.45226131,
+        "variable": "doing_homework",
+        "value": 5.505283342999999
+      },
+      {
+        "time": 10.65326633,
+        "variable": "doing_homework",
+        "value": 5.590860832000001
+      },
+      {
+        "time": 10.85427136,
+        "variable": "doing_homework",
+        "value": 5.678527598
+      },
+      {
+        "time": 11.05527638,
+        "variable": "doing_homework",
+        "value": 5.768334648
+      },
+      {
+        "time": 11.25628141,
+        "variable": "doing_homework",
+        "value": 5.860334234
+      },
+      {
+        "time": 11.45728643,
+        "variable": "doing_homework",
+        "value": 5.954579885
+      },
+      {
+        "time": 11.65829146,
+        "variable": "doing_homework",
+        "value": 6.0511264360000006
+      },
+      {
+        "time": 11.85929648,
+        "variable": "doing_homework",
+        "value": 6.150030061
+      },
+      {
+        "time": 12.06030151,
+        "variable": "doing_homework",
+        "value": 6.251348305
+      },
+      {
+        "time": 12.26130653,
+        "variable": "doing_homework",
+        "value": 6.355140118
+      },
+      {
+        "time": 12.46231156,
+        "variable": "doing_homework",
+        "value": 6.46146589
+      },
+      {
+        "time": 12.66331658,
+        "variable": "doing_homework",
+        "value": 6.570387483999999
+      },
+      {
+        "time": 12.86432161,
+        "variable": "doing_homework",
+        "value": 6.681968274
+      },
+      {
+        "time": 13.06532663,
+        "variable": "doing_homework",
+        "value": 6.796273182
+      },
+      {
+        "time": 13.26633166,
+        "variable": "doing_homework",
+        "value": 6.913368714
+      },
+      {
+        "time": 13.46733668,
+        "variable": "doing_homework",
+        "value": 7.033322999
+      },
+      {
+        "time": 13.66834171,
+        "variable": "doing_homework",
+        "value": 7.156205831
+      },
+      {
+        "time": 13.86934673,
+        "variable": "doing_homework",
+        "value": 7.282088708
+      },
+      {
+        "time": 14.07035176,
+        "variable": "doing_homework",
+        "value": 7.41104487
+      },
+      {
+        "time": 14.27135678,
+        "variable": "doing_homework",
+        "value": 7.543149351
+      },
+      {
+        "time": 14.47236181,
+        "variable": "doing_homework",
+        "value": 7.678479011
+      },
+      {
+        "time": 14.67336683,
+        "variable": "doing_homework",
+        "value": 7.81711259
+      },
+      {
+        "time": 14.87437186,
+        "variable": "doing_homework",
+        "value": 7.95913075
+      },
+      {
+        "time": 15.07537688,
+        "variable": "doing_homework",
+        "value": 8.104616121
+      },
+      {
+        "time": 15.27638191,
+        "variable": "doing_homework",
+        "value": 8.253653351
+      },
+      {
+        "time": 15.47738693,
+        "variable": "doing_homework",
+        "value": 8.406329155
+      },
+      {
+        "time": 15.67839196,
+        "variable": "doing_homework",
+        "value": 8.562732364
+      },
+      {
+        "time": 15.87939698,
+        "variable": "doing_homework",
+        "value": 8.722953979
+      },
+      {
+        "time": 16.08040201,
+        "variable": "doing_homework",
+        "value": 8.887087222
+      },
+      {
+        "time": 16.28140704,
+        "variable": "doing_homework",
+        "value": 9.05522759
+      },
+      {
+        "time": 16.48241206,
+        "variable": "doing_homework",
+        "value": 9.227472914
+      },
+      {
+        "time": 16.68341709,
+        "variable": "doing_homework",
+        "value": 9.40392341
+      },
+      {
+        "time": 16.88442211,
+        "variable": "doing_homework",
+        "value": 9.584681744
+      },
+      {
+        "time": 17.08542714,
+        "variable": "doing_homework",
+        "value": 9.769853085
+      },
+      {
+        "time": 17.28643216,
+        "variable": "doing_homework",
+        "value": 9.959545174
+      },
+      {
+        "time": 17.48743719,
+        "variable": "doing_homework",
+        "value": 10.15386838
+      },
+      {
+        "time": 17.68844221,
+        "variable": "doing_homework",
+        "value": 10.35293576
+      },
+      {
+        "time": 17.88944724,
+        "variable": "doing_homework",
+        "value": 10.55686315
+      },
+      {
+        "time": 18.09045226,
+        "variable": "doing_homework",
+        "value": 10.76576919
+      },
+      {
+        "time": 18.29145729,
+        "variable": "doing_homework",
+        "value": 10.97977543
+      },
+      {
+        "time": 18.49246231,
+        "variable": "doing_homework",
+        "value": 11.19900639
+      },
+      {
+        "time": 18.69346734,
+        "variable": "doing_homework",
+        "value": 11.42358963
+      },
+      {
+        "time": 18.89447236,
+        "variable": "doing_homework",
+        "value": 11.653655800000001
+      },
+      {
+        "time": 19.09547739,
+        "variable": "doing_homework",
+        "value": 11.88933878
+      },
+      {
+        "time": 19.29648241,
+        "variable": "doing_homework",
+        "value": 12.1307757
+      },
+      {
+        "time": 19.49748744,
+        "variable": "doing_homework",
+        "value": 12.37810701
+      },
+      {
+        "time": 19.69849246,
+        "variable": "doing_homework",
+        "value": 12.63147664
+      },
+      {
+        "time": 19.89949749,
+        "variable": "doing_homework",
+        "value": 12.891032000000001
+      },
+      {
+        "time": 20.10050251,
+        "variable": "doing_homework",
+        "value": 13.15692411
+      },
+      {
+        "time": 20.30150754,
+        "variable": "doing_homework",
+        "value": 13.42930767
+      },
+      {
+        "time": 20.50251256,
+        "variable": "doing_homework",
+        "value": 13.70834116
+      },
+      {
+        "time": 20.70351759,
+        "variable": "doing_homework",
+        "value": 13.99418694
+      },
+      {
+        "time": 20.90452261,
+        "variable": "doing_homework",
+        "value": 14.28701131
+      },
+      {
+        "time": 21.10552764,
+        "variable": "doing_homework",
+        "value": 14.58698466
+      },
+      {
+        "time": 21.30653266,
+        "variable": "doing_homework",
+        "value": 14.89428151
+      },
+      {
+        "time": 21.50753769,
+        "variable": "doing_homework",
+        "value": 15.20908067
+      },
+      {
+        "time": 21.70854271,
+        "variable": "doing_homework",
+        "value": 15.53156529
+      },
+      {
+        "time": 21.90954774,
+        "variable": "doing_homework",
+        "value": 15.861923
+      },
+      {
+        "time": 22.11055276,
+        "variable": "doing_homework",
+        "value": 16.20034602
+      },
+      {
+        "time": 22.31155779,
+        "variable": "doing_homework",
+        "value": 16.54703125
+      },
+      {
+        "time": 22.51256281,
+        "variable": "doing_homework",
+        "value": 16.9021804
+      },
+      {
+        "time": 22.71356784,
+        "variable": "doing_homework",
+        "value": 17.26600011
+      },
+      {
+        "time": 22.91457286,
+        "variable": "doing_homework",
+        "value": 17.63870207
+      },
+      {
+        "time": 23.11557789,
+        "variable": "doing_homework",
+        "value": 18.02050312
+      },
+      {
+        "time": 23.31658291,
+        "variable": "doing_homework",
+        "value": 18.4116254
+      },
+      {
+        "time": 23.51758794,
+        "variable": "doing_homework",
+        "value": 18.81229649
+      },
+      {
+        "time": 23.71859296,
+        "variable": "doing_homework",
+        "value": 19.22274951
+      },
+      {
+        "time": 23.91959799,
+        "variable": "doing_homework",
+        "value": 19.64322327
+      },
+      {
+        "time": 24.12060302,
+        "variable": "doing_homework",
+        "value": 20.07396241
+      },
+      {
+        "time": 24.32160804,
+        "variable": "doing_homework",
+        "value": 20.51521756
+      },
+      {
+        "time": 24.52261307,
+        "variable": "doing_homework",
+        "value": 20.96724545
+      },
+      {
+        "time": 24.72361809,
+        "variable": "doing_homework",
+        "value": 21.43030908
+      },
+      {
+        "time": 24.92462312,
+        "variable": "doing_homework",
+        "value": 21.90467789
+      },
+      {
+        "time": 25.12562814,
+        "variable": "doing_homework",
+        "value": 22.39062786
+      },
+      {
+        "time": 25.32663317,
+        "variable": "doing_homework",
+        "value": 22.88844175
+      },
+      {
+        "time": 25.52763819,
+        "variable": "doing_homework",
+        "value": 23.3984092
+      },
+      {
+        "time": 25.72864322,
+        "variable": "doing_homework",
+        "value": 23.92082692
+      },
+      {
+        "time": 25.92964824,
+        "variable": "doing_homework",
+        "value": 24.45599887
+      },
+      {
+        "time": 26.13065327,
+        "variable": "doing_homework",
+        "value": 25.00423644
+      },
+      {
+        "time": 26.33165829,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 26.53266332,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 26.73366834,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 26.93467337,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 27.13567839,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 27.33668342,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 27.53768844,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 27.73869347,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 27.93969849,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 28.14070352,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 28.34170854,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 28.54271357,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 28.74371859,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 28.94472362,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 29.14572864,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 29.34673367,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 29.54773869,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 29.74874372,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 29.94974874,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 30.15075377,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 30.35175879,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 30.55276382,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 30.75376884,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 30.95477387,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 31.15577889,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 31.35678392,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 31.55778894,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 31.75879397,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 31.95979899,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 32.16080402,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 32.36180905,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 32.56281407,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 32.7638191,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 32.96482412,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 33.16582915,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 33.36683417,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 33.5678392,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 33.76884422,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 33.96984925,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 34.17085427,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 34.3718593,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 34.57286432,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 34.77386935,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 34.97487437,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 35.1758794,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 35.37688442,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 35.57788945,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 35.77889447,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 35.9798995,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 36.18090452,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 36.38190955,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 36.58291457,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 36.7839196,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 36.98492462,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 37.18592965,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 37.38693467,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 37.58793970000001,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 37.78894472,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 37.98994975,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 38.19095477,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 38.3919598,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 38.59296482,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 38.79396985,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 38.99497487,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 39.1959799,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 39.39698492,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 39.59798995,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 39.79899497,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 40,
+        "variable": "doing_homework",
+        "value": null
+      },
+      {
+        "time": 0,
+        "variable": "building_portfolio",
+        "value": 5
+      },
+      {
+        "time": 0.201005025,
+        "variable": "building_portfolio",
+        "value": 5.02426664
+      },
+      {
+        "time": 0.40201005,
+        "variable": "building_portfolio",
+        "value": 5.048827716
+      },
+      {
+        "time": 0.603015075,
+        "variable": "building_portfolio",
+        "value": 5.073686798
+      },
+      {
+        "time": 0.804020101,
+        "variable": "building_portfolio",
+        "value": 5.098847504
+      },
+      {
+        "time": 1.005025126,
+        "variable": "building_portfolio",
+        "value": 5.124313493
+      },
+      {
+        "time": 1.206030151,
+        "variable": "building_portfolio",
+        "value": 5.150088469
+      },
+      {
+        "time": 1.407035176,
+        "variable": "building_portfolio",
+        "value": 5.176176181000001
+      },
+      {
+        "time": 1.608040201,
+        "variable": "building_portfolio",
+        "value": 5.202580423
+      },
+      {
+        "time": 1.8090452259999998,
+        "variable": "building_portfolio",
+        "value": 5.229305037
+      },
+      {
+        "time": 2.010050251,
+        "variable": "building_portfolio",
+        "value": 5.256353908
+      },
+      {
+        "time": 2.2110552759999997,
+        "variable": "building_portfolio",
+        "value": 5.283730973
+      },
+      {
+        "time": 2.412060302,
+        "variable": "building_portfolio",
+        "value": 5.311440212
+      },
+      {
+        "time": 2.6130653269999997,
+        "variable": "building_portfolio",
+        "value": 5.339485656
+      },
+      {
+        "time": 2.814070352,
+        "variable": "building_portfolio",
+        "value": 5.367871385
+      },
+      {
+        "time": 3.015075377,
+        "variable": "building_portfolio",
+        "value": 5.396601526
+      },
+      {
+        "time": 3.216080402,
+        "variable": "building_portfolio",
+        "value": 5.42568026
+      },
+      {
+        "time": 3.417085427,
+        "variable": "building_portfolio",
+        "value": 5.455111815
+      },
+      {
+        "time": 3.6180904519999997,
+        "variable": "building_portfolio",
+        "value": 5.484900473
+      },
+      {
+        "time": 3.819095477,
+        "variable": "building_portfolio",
+        "value": 5.515050566
+      },
+      {
+        "time": 4.020100503,
+        "variable": "building_portfolio",
+        "value": 5.54556648
+      },
+      {
+        "time": 4.221105528,
+        "variable": "building_portfolio",
+        "value": 5.576452653
+      },
+      {
+        "time": 4.422110553,
+        "variable": "building_portfolio",
+        "value": 5.607713577999999
+      },
+      {
+        "time": 4.623115578,
+        "variable": "building_portfolio",
+        "value": 5.6393538020000005
+      },
+      {
+        "time": 4.824120603,
+        "variable": "building_portfolio",
+        "value": 5.671377927000001
+      },
+      {
+        "time": 5.0251256280000005,
+        "variable": "building_portfolio",
+        "value": 5.7037906110000005
+      },
+      {
+        "time": 5.226130653,
+        "variable": "building_portfolio",
+        "value": 5.7365965679999995
+      },
+      {
+        "time": 5.427135678,
+        "variable": "building_portfolio",
+        "value": 5.76980057
+      },
+      {
+        "time": 5.628140704,
+        "variable": "building_portfolio",
+        "value": 5.8034074470000006
+      },
+      {
+        "time": 5.8291457289999995,
+        "variable": "building_portfolio",
+        "value": 5.837422087
+      },
+      {
+        "time": 6.030150754,
+        "variable": "building_portfolio",
+        "value": 5.871849438
+      },
+      {
+        "time": 6.231155779,
+        "variable": "building_portfolio",
+        "value": 5.906694507
+      },
+      {
+        "time": 6.432160804,
+        "variable": "building_portfolio",
+        "value": 5.941962362000001
+      },
+      {
+        "time": 6.633165829,
+        "variable": "building_portfolio",
+        "value": 5.977658132999999
+      },
+      {
+        "time": 6.834170854,
+        "variable": "building_portfolio",
+        "value": 6.013787013
+      },
+      {
+        "time": 7.035175879,
+        "variable": "building_portfolio",
+        "value": 6.050354256
+      },
+      {
+        "time": 7.236180905,
+        "variable": "building_portfolio",
+        "value": 6.087365181
+      },
+      {
+        "time": 7.43718593,
+        "variable": "building_portfolio",
+        "value": 6.124825171
+      },
+      {
+        "time": 7.638190955,
+        "variable": "building_portfolio",
+        "value": 6.162739675
+      },
+      {
+        "time": 7.83919598,
+        "variable": "building_portfolio",
+        "value": 6.201114208
+      },
+      {
+        "time": 8.040201005,
+        "variable": "building_portfolio",
+        "value": 6.239954352000001
+      },
+      {
+        "time": 8.24120603,
+        "variable": "building_portfolio",
+        "value": 6.279265756
+      },
+      {
+        "time": 8.442211055,
+        "variable": "building_portfolio",
+        "value": 6.319054137
+      },
+      {
+        "time": 8.64321608,
+        "variable": "building_portfolio",
+        "value": 6.359325284
+      },
+      {
+        "time": 8.844221106,
+        "variable": "building_portfolio",
+        "value": 6.400085053
+      },
+      {
+        "time": 9.045226131,
+        "variable": "building_portfolio",
+        "value": 6.441339374
+      },
+      {
+        "time": 9.246231156,
+        "variable": "building_portfolio",
+        "value": 6.483094246
+      },
+      {
+        "time": 9.447236181000001,
+        "variable": "building_portfolio",
+        "value": 6.525355744
+      },
+      {
+        "time": 9.648241206,
+        "variable": "building_portfolio",
+        "value": 6.568130013999999
+      },
+      {
+        "time": 9.849246231,
+        "variable": "building_portfolio",
+        "value": 6.611423277999999
+      },
+      {
+        "time": 10.05025126,
+        "variable": "building_portfolio",
+        "value": 6.655241833
+      },
+      {
+        "time": 10.25125628,
+        "variable": "building_portfolio",
+        "value": 6.699592052000001
+      },
+      {
+        "time": 10.45226131,
+        "variable": "building_portfolio",
+        "value": 6.744480387
+      },
+      {
+        "time": 10.65326633,
+        "variable": "building_portfolio",
+        "value": 6.7899133670000005
+      },
+      {
+        "time": 10.85427136,
+        "variable": "building_portfolio",
+        "value": 6.835897599
+      },
+      {
+        "time": 11.05527638,
+        "variable": "building_portfolio",
+        "value": 6.882439773
+      },
+      {
+        "time": 11.25628141,
+        "variable": "building_portfolio",
+        "value": 6.929546658
+      },
+      {
+        "time": 11.45728643,
+        "variable": "building_portfolio",
+        "value": 6.977225106000001
+      },
+      {
+        "time": 11.65829146,
+        "variable": "building_portfolio",
+        "value": 7.025482051
+      },
+      {
+        "time": 11.85929648,
+        "variable": "building_portfolio",
+        "value": 7.074324514
+      },
+      {
+        "time": 12.06030151,
+        "variable": "building_portfolio",
+        "value": 7.1237595979999995
+      },
+      {
+        "time": 12.26130653,
+        "variable": "building_portfolio",
+        "value": 7.173794493
+      },
+      {
+        "time": 12.46231156,
+        "variable": "building_portfolio",
+        "value": 7.224436477999999
+      },
+      {
+        "time": 12.66331658,
+        "variable": "building_portfolio",
+        "value": 7.275692919
+      },
+      {
+        "time": 12.86432161,
+        "variable": "building_portfolio",
+        "value": 7.32757127
+      },
+      {
+        "time": 13.06532663,
+        "variable": "building_portfolio",
+        "value": 7.380079078
+      },
+      {
+        "time": 13.26633166,
+        "variable": "building_portfolio",
+        "value": 7.43322398
+      },
+      {
+        "time": 13.46733668,
+        "variable": "building_portfolio",
+        "value": 7.487013706
+      },
+      {
+        "time": 13.66834171,
+        "variable": "building_portfolio",
+        "value": 7.54145608
+      },
+      {
+        "time": 13.86934673,
+        "variable": "building_portfolio",
+        "value": 7.596559021
+      },
+      {
+        "time": 14.07035176,
+        "variable": "building_portfolio",
+        "value": 7.652330543
+      },
+      {
+        "time": 14.27135678,
+        "variable": "building_portfolio",
+        "value": 7.708778758999999
+      },
+      {
+        "time": 14.47236181,
+        "variable": "building_portfolio",
+        "value": 7.76591188
+      },
+      {
+        "time": 14.67336683,
+        "variable": "building_portfolio",
+        "value": 7.823738214
+      },
+      {
+        "time": 14.87437186,
+        "variable": "building_portfolio",
+        "value": 7.882266175
+      },
+      {
+        "time": 15.07537688,
+        "variable": "building_portfolio",
+        "value": 7.941504273
+      },
+      {
+        "time": 15.27638191,
+        "variable": "building_portfolio",
+        "value": 8.001461127
+      },
+      {
+        "time": 15.47738693,
+        "variable": "building_portfolio",
+        "value": 8.062145456
+      },
+      {
+        "time": 15.67839196,
+        "variable": "building_portfolio",
+        "value": 8.123566087999999
+      },
+      {
+        "time": 15.87939698,
+        "variable": "building_portfolio",
+        "value": 8.185731956
+      },
+      {
+        "time": 16.08040201,
+        "variable": "building_portfolio",
+        "value": 8.248652102000001
+      },
+      {
+        "time": 16.28140704,
+        "variable": "building_portfolio",
+        "value": 8.312335679
+      },
+      {
+        "time": 16.48241206,
+        "variable": "building_portfolio",
+        "value": 8.376791948
+      },
+      {
+        "time": 16.68341709,
+        "variable": "building_portfolio",
+        "value": 8.442030287
+      },
+      {
+        "time": 16.88442211,
+        "variable": "building_portfolio",
+        "value": 8.508060183
+      },
+      {
+        "time": 17.08542714,
+        "variable": "building_portfolio",
+        "value": 8.57489124
+      },
+      {
+        "time": 17.28643216,
+        "variable": "building_portfolio",
+        "value": 8.642533181000001
+      },
+      {
+        "time": 17.48743719,
+        "variable": "building_portfolio",
+        "value": 8.710995843
+      },
+      {
+        "time": 17.68844221,
+        "variable": "building_portfolio",
+        "value": 8.780289183999999
+      },
+      {
+        "time": 17.88944724,
+        "variable": "building_portfolio",
+        "value": 8.850423283
+      },
+      {
+        "time": 18.09045226,
+        "variable": "building_portfolio",
+        "value": 8.921408342000001
+      },
+      {
+        "time": 18.29145729,
+        "variable": "building_portfolio",
+        "value": 8.993254686
+      },
+      {
+        "time": 18.49246231,
+        "variable": "building_portfolio",
+        "value": 9.065972764
+      },
+      {
+        "time": 18.69346734,
+        "variable": "building_portfolio",
+        "value": 9.139573152999999
+      },
+      {
+        "time": 18.89447236,
+        "variable": "building_portfolio",
+        "value": 9.21406656
+      },
+      {
+        "time": 19.09547739,
+        "variable": "building_portfolio",
+        "value": 9.28946382
+      },
+      {
+        "time": 19.29648241,
+        "variable": "building_portfolio",
+        "value": 9.365775897999999
+      },
+      {
+        "time": 19.49748744,
+        "variable": "building_portfolio",
+        "value": 9.443013895
+      },
+      {
+        "time": 19.69849246,
+        "variable": "building_portfolio",
+        "value": 9.521189046
+      },
+      {
+        "time": 19.89949749,
+        "variable": "building_portfolio",
+        "value": 9.600312721
+      },
+      {
+        "time": 20.10050251,
+        "variable": "building_portfolio",
+        "value": 9.680396428
+      },
+      {
+        "time": 20.30150754,
+        "variable": "building_portfolio",
+        "value": 9.761451817000001
+      },
+      {
+        "time": 20.50251256,
+        "variable": "building_portfolio",
+        "value": 9.843490677
+      },
+      {
+        "time": 20.70351759,
+        "variable": "building_portfolio",
+        "value": 9.92652494
+      },
+      {
+        "time": 20.90452261,
+        "variable": "building_portfolio",
+        "value": 10.01056669
+      },
+      {
+        "time": 21.10552764,
+        "variable": "building_portfolio",
+        "value": 10.09562814
+      },
+      {
+        "time": 21.30653266,
+        "variable": "building_portfolio",
+        "value": 10.18172166
+      },
+      {
+        "time": 21.50753769,
+        "variable": "building_portfolio",
+        "value": 10.26885979
+      },
+      {
+        "time": 21.70854271,
+        "variable": "building_portfolio",
+        "value": 10.3570552
+      },
+      {
+        "time": 21.90954774,
+        "variable": "building_portfolio",
+        "value": 10.4463207
+      },
+      {
+        "time": 22.11055276,
+        "variable": "building_portfolio",
+        "value": 10.536669300000002
+      },
+      {
+        "time": 22.31155779,
+        "variable": "building_portfolio",
+        "value": 10.62811412
+      },
+      {
+        "time": 22.51256281,
+        "variable": "building_portfolio",
+        "value": 10.72066847
+      },
+      {
+        "time": 22.71356784,
+        "variable": "building_portfolio",
+        "value": 10.81434581
+      },
+      {
+        "time": 22.91457286,
+        "variable": "building_portfolio",
+        "value": 10.90915977
+      },
+      {
+        "time": 23.11557789,
+        "variable": "building_portfolio",
+        "value": 11.00512414
+      },
+      {
+        "time": 23.31658291,
+        "variable": "building_portfolio",
+        "value": 11.10225287
+      },
+      {
+        "time": 23.51758794,
+        "variable": "building_portfolio",
+        "value": 11.200560099999999
+      },
+      {
+        "time": 23.71859296,
+        "variable": "building_portfolio",
+        "value": 11.30006012
+      },
+      {
+        "time": 23.91959799,
+        "variable": "building_portfolio",
+        "value": 11.40076741
+      },
+      {
+        "time": 24.12060302,
+        "variable": "building_portfolio",
+        "value": 11.50269661
+      },
+      {
+        "time": 24.32160804,
+        "variable": "building_portfolio",
+        "value": 11.60586255
+      },
+      {
+        "time": 24.52261307,
+        "variable": "building_portfolio",
+        "value": 11.71028024
+      },
+      {
+        "time": 24.72361809,
+        "variable": "building_portfolio",
+        "value": 11.81596486
+      },
+      {
+        "time": 24.92462312,
+        "variable": "building_portfolio",
+        "value": 11.92293178
+      },
+      {
+        "time": 25.12562814,
+        "variable": "building_portfolio",
+        "value": 12.03119657
+      },
+      {
+        "time": 25.32663317,
+        "variable": "building_portfolio",
+        "value": 12.14077497
+      },
+      {
+        "time": 25.52763819,
+        "variable": "building_portfolio",
+        "value": 12.25168292
+      },
+      {
+        "time": 25.72864322,
+        "variable": "building_portfolio",
+        "value": 12.36393655
+      },
+      {
+        "time": 25.92964824,
+        "variable": "building_portfolio",
+        "value": 12.47755219
+      },
+      {
+        "time": 26.13065327,
+        "variable": "building_portfolio",
+        "value": 12.59254636
+      },
+      {
+        "time": 26.33165829,
+        "variable": "building_portfolio",
+        "value": 12.7089358
+      },
+      {
+        "time": 26.53266332,
+        "variable": "building_portfolio",
+        "value": 12.82673743
+      },
+      {
+        "time": 26.73366834,
+        "variable": "building_portfolio",
+        "value": 12.94596838
+      },
+      {
+        "time": 26.93467337,
+        "variable": "building_portfolio",
+        "value": 13.066646
+      },
+      {
+        "time": 27.13567839,
+        "variable": "building_portfolio",
+        "value": 13.18878784
+      },
+      {
+        "time": 27.33668342,
+        "variable": "building_portfolio",
+        "value": 13.31241166
+      },
+      {
+        "time": 27.53768844,
+        "variable": "building_portfolio",
+        "value": 13.43753546
+      },
+      {
+        "time": 27.73869347,
+        "variable": "building_portfolio",
+        "value": 13.56417742
+      },
+      {
+        "time": 27.93969849,
+        "variable": "building_portfolio",
+        "value": 13.69235596
+      },
+      {
+        "time": 28.14070352,
+        "variable": "building_portfolio",
+        "value": 13.82208974
+      },
+      {
+        "time": 28.34170854,
+        "variable": "building_portfolio",
+        "value": 13.95339762
+      },
+      {
+        "time": 28.54271357,
+        "variable": "building_portfolio",
+        "value": 14.086298699999999
+      },
+      {
+        "time": 28.74371859,
+        "variable": "building_portfolio",
+        "value": 14.22081231
+      },
+      {
+        "time": 28.94472362,
+        "variable": "building_portfolio",
+        "value": 14.35695802
+      },
+      {
+        "time": 29.14572864,
+        "variable": "building_portfolio",
+        "value": 14.49475563
+      },
+      {
+        "time": 29.34673367,
+        "variable": "building_portfolio",
+        "value": 14.63422518
+      },
+      {
+        "time": 29.54773869,
+        "variable": "building_portfolio",
+        "value": 14.77538696
+      },
+      {
+        "time": 29.74874372,
+        "variable": "building_portfolio",
+        "value": 14.9182615
+      },
+      {
+        "time": 29.94974874,
+        "variable": "building_portfolio",
+        "value": 15.06286958
+      },
+      {
+        "time": 30.15075377,
+        "variable": "building_portfolio",
+        "value": 15.20923224
+      },
+      {
+        "time": 30.35175879,
+        "variable": "building_portfolio",
+        "value": 15.35737077
+      },
+      {
+        "time": 30.55276382,
+        "variable": "building_portfolio",
+        "value": 15.507306699999997
+      },
+      {
+        "time": 30.75376884,
+        "variable": "building_portfolio",
+        "value": 15.65906186
+      },
+      {
+        "time": 30.95477387,
+        "variable": "building_portfolio",
+        "value": 15.81265831
+      },
+      {
+        "time": 31.15577889,
+        "variable": "building_portfolio",
+        "value": 15.968118400000002
+      },
+      {
+        "time": 31.35678392,
+        "variable": "building_portfolio",
+        "value": 16.12546473
+      },
+      {
+        "time": 31.55778894,
+        "variable": "building_portfolio",
+        "value": 16.28472019
+      },
+      {
+        "time": 31.75879397,
+        "variable": "building_portfolio",
+        "value": 16.44590796
+      },
+      {
+        "time": 31.95979899,
+        "variable": "building_portfolio",
+        "value": 16.60905146
+      },
+      {
+        "time": 32.16080402,
+        "variable": "building_portfolio",
+        "value": 16.77417444
+      },
+      {
+        "time": 32.36180905,
+        "variable": "building_portfolio",
+        "value": 16.94130091
+      },
+      {
+        "time": 32.56281407,
+        "variable": "building_portfolio",
+        "value": 17.11045518
+      },
+      {
+        "time": 32.7638191,
+        "variable": "building_portfolio",
+        "value": 17.28166185
+      },
+      {
+        "time": 32.96482412,
+        "variable": "building_portfolio",
+        "value": 17.45494583
+      },
+      {
+        "time": 33.16582915,
+        "variable": "building_portfolio",
+        "value": 17.63033231
+      },
+      {
+        "time": 33.36683417,
+        "variable": "building_portfolio",
+        "value": 17.80784682
+      },
+      {
+        "time": 33.5678392,
+        "variable": "building_portfolio",
+        "value": 17.98751517
+      },
+      {
+        "time": 33.76884422,
+        "variable": "building_portfolio",
+        "value": 18.16936349
+      },
+      {
+        "time": 33.96984925,
+        "variable": "building_portfolio",
+        "value": 18.35341823
+      },
+      {
+        "time": 34.17085427,
+        "variable": "building_portfolio",
+        "value": 18.53970617
+      },
+      {
+        "time": 34.3718593,
+        "variable": "building_portfolio",
+        "value": 18.7282544
+      },
+      {
+        "time": 34.57286432,
+        "variable": "building_portfolio",
+        "value": 18.91909035
+      },
+      {
+        "time": 34.77386935,
+        "variable": "building_portfolio",
+        "value": 19.11224177
+      },
+      {
+        "time": 34.97487437,
+        "variable": "building_portfolio",
+        "value": 19.30773676
+      },
+      {
+        "time": 35.1758794,
+        "variable": "building_portfolio",
+        "value": 19.50560375
+      },
+      {
+        "time": 35.37688442,
+        "variable": "building_portfolio",
+        "value": 19.70587152
+      },
+      {
+        "time": 35.57788945,
+        "variable": "building_portfolio",
+        "value": 19.90856921
+      },
+      {
+        "time": 35.77889447,
+        "variable": "building_portfolio",
+        "value": 20.1137263
+      },
+      {
+        "time": 35.9798995,
+        "variable": "building_portfolio",
+        "value": 20.32137262
+      },
+      {
+        "time": 36.18090452,
+        "variable": "building_portfolio",
+        "value": 20.53153838
+      },
+      {
+        "time": 36.38190955,
+        "variable": "building_portfolio",
+        "value": 20.74425415
+      },
+      {
+        "time": 36.58291457,
+        "variable": "building_portfolio",
+        "value": 20.95955086
+      },
+      {
+        "time": 36.7839196,
+        "variable": "building_portfolio",
+        "value": 21.17745984
+      },
+      {
+        "time": 36.98492462,
+        "variable": "building_portfolio",
+        "value": 21.39801278
+      },
+      {
+        "time": 37.18592965,
+        "variable": "building_portfolio",
+        "value": 21.62124176
+      },
+      {
+        "time": 37.38693467,
+        "variable": "building_portfolio",
+        "value": 21.84717925
+      },
+      {
+        "time": 37.58793970000001,
+        "variable": "building_portfolio",
+        "value": 22.07585811
+      },
+      {
+        "time": 37.78894472,
+        "variable": "building_portfolio",
+        "value": 22.30731161
+      },
+      {
+        "time": 37.98994975,
+        "variable": "building_portfolio",
+        "value": 22.5415734
+      },
+      {
+        "time": 38.19095477,
+        "variable": "building_portfolio",
+        "value": 22.77867757
+      },
+      {
+        "time": 38.3919598,
+        "variable": "building_portfolio",
+        "value": 23.018658600000002
+      },
+      {
+        "time": 38.59296482,
+        "variable": "building_portfolio",
+        "value": 23.26155139
+      },
+      {
+        "time": 38.79396985,
+        "variable": "building_portfolio",
+        "value": 23.50739128
+      },
+      {
+        "time": 38.99497487,
+        "variable": "building_portfolio",
+        "value": 23.75621403
+      },
+      {
+        "time": 39.1959799,
+        "variable": "building_portfolio",
+        "value": 24.00805582
+      },
+      {
+        "time": 39.39698492,
+        "variable": "building_portfolio",
+        "value": 24.26295329
+      },
+      {
+        "time": 39.59798995,
+        "variable": "building_portfolio",
+        "value": 24.52094351
+      },
+      {
+        "time": 39.79899497,
+        "variable": "building_portfolio",
+        "value": 24.782064000000002
+      },
+      {
+        "time": 40,
+        "variable": "building_portfolio",
+        "value": 25.04635276
+      }
+    ],
+    "data-d91b6c1c9a1db992decb70e2557feecf": [
+      {
+        "deadline": 26.1306533
+      }
+    ],
+    "data-4c421de0c46a5211e78ad7835a880907": [
+      {
+        "time": 0,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 0.201005025,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 0.40201005,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 0.603015075,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 0.804020101,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 1.005025126,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 1.206030151,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 1.407035176,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 1.608040201,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 1.8090452259999998,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 2.010050251,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 2.2110552759999997,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 2.412060302,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 2.6130653269999997,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 2.814070352,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 3.015075377,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 3.216080402,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 3.417085427,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 3.6180904519999997,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 3.819095477,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 4.020100503,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 4.221105528,
+        "variable": "reality",
+        "value": 9
+      },
+      {
+        "time": 4.422110553,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 4.623115578,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 4.824120603,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 5.0251256280000005,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 5.226130653,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 5.427135678,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 5.628140704,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 5.8291457289999995,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 6.030150754,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 6.231155779,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 6.432160804,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 6.633165829,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 6.834170854,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 7.035175879,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 7.236180905,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 7.43718593,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 7.638190955,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 7.83919598,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 8.040201005,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 8.24120603,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 8.442211055,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 8.64321608,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 8.844221106,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 9.045226131,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 9.246231156,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 9.447236181000001,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 9.648241206,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 9.849246231,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 10.05025126,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 10.25125628,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 10.45226131,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 10.65326633,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 10.85427136,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 11.05527638,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 11.25628141,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 11.45728643,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 11.65829146,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 11.85929648,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 12.06030151,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 12.26130653,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 12.46231156,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 12.66331658,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 12.86432161,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 13.06532663,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 13.26633166,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 13.46733668,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 13.66834171,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 13.86934673,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 14.07035176,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 14.27135678,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 14.47236181,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 14.67336683,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 14.87437186,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 15.07537688,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 15.27638191,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 15.47738693,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 15.67839196,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 15.87939698,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 16.08040201,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 16.28140704,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 16.48241206,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 16.68341709,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 16.88442211,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 17.08542714,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 17.28643216,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 17.48743719,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 17.68844221,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 17.88944724,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 18.09045226,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 18.29145729,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 18.49246231,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 18.69346734,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 18.89447236,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 19.09547739,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 19.29648241,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 19.49748744,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 19.69849246,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 19.89949749,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 20.10050251,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 20.30150754,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 20.50251256,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 20.70351759,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 20.90452261,
+        "variable": "reality",
+        "value": 14.28701131
+      },
+      {
+        "time": 21.10552764,
+        "variable": "reality",
+        "value": 14.58698466
+      },
+      {
+        "time": 21.30653266,
+        "variable": "reality",
+        "value": 14.89428151
+      },
+      {
+        "time": 21.50753769,
+        "variable": "reality",
+        "value": 15.20908067
+      },
+      {
+        "time": 21.70854271,
+        "variable": "reality",
+        "value": 15.53156529
+      },
+      {
+        "time": 21.90954774,
+        "variable": "reality",
+        "value": 15.861923
+      },
+      {
+        "time": 22.11055276,
+        "variable": "reality",
+        "value": 16.20034602
+      },
+      {
+        "time": 22.31155779,
+        "variable": "reality",
+        "value": 16.54703125
+      },
+      {
+        "time": 22.51256281,
+        "variable": "reality",
+        "value": 16.9021804
+      },
+      {
+        "time": 22.71356784,
+        "variable": "reality",
+        "value": 17.26600011
+      },
+      {
+        "time": 22.91457286,
+        "variable": "reality",
+        "value": 17.63870207
+      },
+      {
+        "time": 23.11557789,
+        "variable": "reality",
+        "value": 18.02050312
+      },
+      {
+        "time": 23.31658291,
+        "variable": "reality",
+        "value": 18.4116254
+      },
+      {
+        "time": 23.51758794,
+        "variable": "reality",
+        "value": 18.81229649
+      },
+      {
+        "time": 23.71859296,
+        "variable": "reality",
+        "value": 19.22274951
+      },
+      {
+        "time": 23.91959799,
+        "variable": "reality",
+        "value": 19.64322327
+      },
+      {
+        "time": 24.12060302,
+        "variable": "reality",
+        "value": 20.07396241
+      },
+      {
+        "time": 24.32160804,
+        "variable": "reality",
+        "value": 20.51521756
+      },
+      {
+        "time": 24.52261307,
+        "variable": "reality",
+        "value": 20.96724545
+      },
+      {
+        "time": 24.72361809,
+        "variable": "reality",
+        "value": 21.43030908
+      },
+      {
+        "time": 24.92462312,
+        "variable": "reality",
+        "value": 21.90467789
+      },
+      {
+        "time": 25.12562814,
+        "variable": "reality",
+        "value": 22.39062786
+      },
+      {
+        "time": 25.32663317,
+        "variable": "reality",
+        "value": 22.88844175
+      },
+      {
+        "time": 25.52763819,
+        "variable": "reality",
+        "value": 23.3984092
+      },
+      {
+        "time": 25.72864322,
+        "variable": "reality",
+        "value": 23.92082692
+      },
+      {
+        "time": 25.92964824,
+        "variable": "reality",
+        "value": 24.45599887
+      },
+      {
+        "time": 26.13065327,
+        "variable": "reality",
+        "value": 25.00423644
+      },
+      {
+        "time": 26.33165829,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 26.53266332,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 26.73366834,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 26.93467337,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 27.13567839,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 27.33668342,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 27.53768844,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 27.73869347,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 27.93969849,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 28.14070352,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 28.34170854,
+        "variable": "reality",
+        "value": 14
+      },
+      {
+        "time": 28.54271357,
+        "variable": "reality",
+        "value": 14.086298699999999
+      },
+      {
+        "time": 28.74371859,
+        "variable": "reality",
+        "value": 14.22081231
+      },
+      {
+        "time": 28.94472362,
+        "variable": "reality",
+        "value": 14.35695802
+      },
+      {
+        "time": 29.14572864,
+        "variable": "reality",
+        "value": 14.49475563
+      },
+      {
+        "time": 29.34673367,
+        "variable": "reality",
+        "value": 14.63422518
+      },
+      {
+        "time": 29.54773869,
+        "variable": "reality",
+        "value": 14.77538696
+      },
+      {
+        "time": 29.74874372,
+        "variable": "reality",
+        "value": 14.9182615
+      },
+      {
+        "time": 29.94974874,
+        "variable": "reality",
+        "value": 15.06286958
+      },
+      {
+        "time": 30.15075377,
+        "variable": "reality",
+        "value": 15.20923224
+      },
+      {
+        "time": 30.35175879,
+        "variable": "reality",
+        "value": 15.35737077
+      },
+      {
+        "time": 30.55276382,
+        "variable": "reality",
+        "value": 15.507306699999997
+      },
+      {
+        "time": 30.75376884,
+        "variable": "reality",
+        "value": 15.65906186
+      },
+      {
+        "time": 30.95477387,
+        "variable": "reality",
+        "value": 15.81265831
+      },
+      {
+        "time": 31.15577889,
+        "variable": "reality",
+        "value": 15.968118400000002
+      },
+      {
+        "time": 31.35678392,
+        "variable": "reality",
+        "value": 16.12546473
+      },
+      {
+        "time": 31.55778894,
+        "variable": "reality",
+        "value": 16.28472019
+      },
+      {
+        "time": 31.75879397,
+        "variable": "reality",
+        "value": 16.44590796
+      },
+      {
+        "time": 31.95979899,
+        "variable": "reality",
+        "value": 16.60905146
+      },
+      {
+        "time": 32.16080402,
+        "variable": "reality",
+        "value": 16.77417444
+      },
+      {
+        "time": 32.36180905,
+        "variable": "reality",
+        "value": 16.94130091
+      },
+      {
+        "time": 32.56281407,
+        "variable": "reality",
+        "value": 17.11045518
+      },
+      {
+        "time": 32.7638191,
+        "variable": "reality",
+        "value": 17.28166185
+      },
+      {
+        "time": 32.96482412,
+        "variable": "reality",
+        "value": 17.45494583
+      },
+      {
+        "time": 33.16582915,
+        "variable": "reality",
+        "value": 17.63033231
+      },
+      {
+        "time": 33.36683417,
+        "variable": "reality",
+        "value": 17.80784682
+      },
+      {
+        "time": 33.5678392,
+        "variable": "reality",
+        "value": 17.98751517
+      },
+      {
+        "time": 33.76884422,
+        "variable": "reality",
+        "value": 18.16936349
+      },
+      {
+        "time": 33.96984925,
+        "variable": "reality",
+        "value": 18.35341823
+      },
+      {
+        "time": 34.17085427,
+        "variable": "reality",
+        "value": 18.53970617
+      },
+      {
+        "time": 34.3718593,
+        "variable": "reality",
+        "value": 18.7282544
+      },
+      {
+        "time": 34.57286432,
+        "variable": "reality",
+        "value": 18.91909035
+      },
+      {
+        "time": 34.77386935,
+        "variable": "reality",
+        "value": 19.11224177
+      },
+      {
+        "time": 34.97487437,
+        "variable": "reality",
+        "value": 19.30773676
+      },
+      {
+        "time": 35.1758794,
+        "variable": "reality",
+        "value": 19.50560375
+      },
+      {
+        "time": 35.37688442,
+        "variable": "reality",
+        "value": 19.70587152
+      },
+      {
+        "time": 35.57788945,
+        "variable": "reality",
+        "value": 19.90856921
+      },
+      {
+        "time": 35.77889447,
+        "variable": "reality",
+        "value": 20.1137263
+      },
+      {
+        "time": 35.9798995,
+        "variable": "reality",
+        "value": 20.32137262
+      },
+      {
+        "time": 36.18090452,
+        "variable": "reality",
+        "value": 20.53153838
+      },
+      {
+        "time": 36.38190955,
+        "variable": "reality",
+        "value": 20.74425415
+      },
+      {
+        "time": 36.58291457,
+        "variable": "reality",
+        "value": 20.95955086
+      },
+      {
+        "time": 36.7839196,
+        "variable": "reality",
+        "value": 21.17745984
+      },
+      {
+        "time": 36.98492462,
+        "variable": "reality",
+        "value": 21.39801278
+      },
+      {
+        "time": 37.18592965,
+        "variable": "reality",
+        "value": 21.62124176
+      },
+      {
+        "time": 37.38693467,
+        "variable": "reality",
+        "value": 21.84717925
+      },
+      {
+        "time": 37.58793970000001,
+        "variable": "reality",
+        "value": 22.07585811
+      },
+      {
+        "time": 37.78894472,
+        "variable": "reality",
+        "value": 22.30731161
+      },
+      {
+        "time": 37.98994975,
+        "variable": "reality",
+        "value": 22.5415734
+      },
+      {
+        "time": 38.19095477,
+        "variable": "reality",
+        "value": 22.77867757
+      },
+      {
+        "time": 38.3919598,
+        "variable": "reality",
+        "value": 23.018658600000002
+      },
+      {
+        "time": 38.59296482,
+        "variable": "reality",
+        "value": 23.26155139
+      },
+      {
+        "time": 38.79396985,
+        "variable": "reality",
+        "value": 23.50739128
+      },
+      {
+        "time": 38.99497487,
+        "variable": "reality",
+        "value": 23.75621403
+      },
+      {
+        "time": 39.1959799,
+        "variable": "reality",
+        "value": 24.00805582
+      },
+      {
+        "time": 39.39698492,
+        "variable": "reality",
+        "value": 24.26295329
+      },
+      {
+        "time": 39.59798995,
+        "variable": "reality",
+        "value": 24.52094351
+      },
+      {
+        "time": 39.79899497,
+        "variable": "reality",
+        "value": 24.782064000000002
+      },
+      {
+        "time": 40,
+        "variable": "reality",
+        "value": 25.04635276
+      },
+      {
+        "time": 0,
+        "variable": "ideal",
+        "value": 5
+      },
+      {
+        "time": 0.201005025,
+        "variable": "ideal",
+        "value": 5.02426664
+      },
+      {
+        "time": 0.40201005,
+        "variable": "ideal",
+        "value": 5.048827716
+      },
+      {
+        "time": 0.603015075,
+        "variable": "ideal",
+        "value": 5.073686798
+      },
+      {
+        "time": 0.804020101,
+        "variable": "ideal",
+        "value": 5.098847504
+      },
+      {
+        "time": 1.005025126,
+        "variable": "ideal",
+        "value": 5.124313493
+      },
+      {
+        "time": 1.206030151,
+        "variable": "ideal",
+        "value": 5.150088469
+      },
+      {
+        "time": 1.407035176,
+        "variable": "ideal",
+        "value": 5.176176181000001
+      },
+      {
+        "time": 1.608040201,
+        "variable": "ideal",
+        "value": 5.202580423
+      },
+      {
+        "time": 1.8090452259999998,
+        "variable": "ideal",
+        "value": 5.229305037
+      },
+      {
+        "time": 2.010050251,
+        "variable": "ideal",
+        "value": 5.256353908
+      },
+      {
+        "time": 2.2110552759999997,
+        "variable": "ideal",
+        "value": 5.283730973
+      },
+      {
+        "time": 2.412060302,
+        "variable": "ideal",
+        "value": 5.311440212
+      },
+      {
+        "time": 2.6130653269999997,
+        "variable": "ideal",
+        "value": 5.339485656
+      },
+      {
+        "time": 2.814070352,
+        "variable": "ideal",
+        "value": 5.367871385
+      },
+      {
+        "time": 3.015075377,
+        "variable": "ideal",
+        "value": 5.396601526
+      },
+      {
+        "time": 3.216080402,
+        "variable": "ideal",
+        "value": 5.42568026
+      },
+      {
+        "time": 3.417085427,
+        "variable": "ideal",
+        "value": 5.455111815
+      },
+      {
+        "time": 3.6180904519999997,
+        "variable": "ideal",
+        "value": 5.484900473
+      },
+      {
+        "time": 3.819095477,
+        "variable": "ideal",
+        "value": 5.515050566
+      },
+      {
+        "time": 4.020100503,
+        "variable": "ideal",
+        "value": 5.54556648
+      },
+      {
+        "time": 4.221105528,
+        "variable": "ideal",
+        "value": 5.576452653
+      },
+      {
+        "time": 4.422110553,
+        "variable": "ideal",
+        "value": 5.607713577999999
+      },
+      {
+        "time": 4.623115578,
+        "variable": "ideal",
+        "value": 5.6393538020000005
+      },
+      {
+        "time": 4.824120603,
+        "variable": "ideal",
+        "value": 5.671377927000001
+      },
+      {
+        "time": 5.0251256280000005,
+        "variable": "ideal",
+        "value": 5.7037906110000005
+      },
+      {
+        "time": 5.226130653,
+        "variable": "ideal",
+        "value": 5.7365965679999995
+      },
+      {
+        "time": 5.427135678,
+        "variable": "ideal",
+        "value": 5.76980057
+      },
+      {
+        "time": 5.628140704,
+        "variable": "ideal",
+        "value": 5.8034074470000006
+      },
+      {
+        "time": 5.8291457289999995,
+        "variable": "ideal",
+        "value": 5.837422087
+      },
+      {
+        "time": 6.030150754,
+        "variable": "ideal",
+        "value": 5.871849438
+      },
+      {
+        "time": 6.231155779,
+        "variable": "ideal",
+        "value": 5.906694507
+      },
+      {
+        "time": 6.432160804,
+        "variable": "ideal",
+        "value": 5.941962362000001
+      },
+      {
+        "time": 6.633165829,
+        "variable": "ideal",
+        "value": 5.977658132999999
+      },
+      {
+        "time": 6.834170854,
+        "variable": "ideal",
+        "value": 6.013787013
+      },
+      {
+        "time": 7.035175879,
+        "variable": "ideal",
+        "value": 6.050354256
+      },
+      {
+        "time": 7.236180905,
+        "variable": "ideal",
+        "value": 6.087365181
+      },
+      {
+        "time": 7.43718593,
+        "variable": "ideal",
+        "value": 6.124825171
+      },
+      {
+        "time": 7.638190955,
+        "variable": "ideal",
+        "value": 6.162739675
+      },
+      {
+        "time": 7.83919598,
+        "variable": "ideal",
+        "value": 6.201114208
+      },
+      {
+        "time": 8.040201005,
+        "variable": "ideal",
+        "value": 6.239954352000001
+      },
+      {
+        "time": 8.24120603,
+        "variable": "ideal",
+        "value": 6.279265756
+      },
+      {
+        "time": 8.442211055,
+        "variable": "ideal",
+        "value": 6.319054137
+      },
+      {
+        "time": 8.64321608,
+        "variable": "ideal",
+        "value": 6.359325284
+      },
+      {
+        "time": 8.844221106,
+        "variable": "ideal",
+        "value": 6.400085053
+      },
+      {
+        "time": 9.045226131,
+        "variable": "ideal",
+        "value": 6.441339374
+      },
+      {
+        "time": 9.246231156,
+        "variable": "ideal",
+        "value": 6.483094246
+      },
+      {
+        "time": 9.447236181000001,
+        "variable": "ideal",
+        "value": 6.525355744
+      },
+      {
+        "time": 9.648241206,
+        "variable": "ideal",
+        "value": 6.568130013999999
+      },
+      {
+        "time": 9.849246231,
+        "variable": "ideal",
+        "value": 6.611423277999999
+      },
+      {
+        "time": 10.05025126,
+        "variable": "ideal",
+        "value": 6.655241833
+      },
+      {
+        "time": 10.25125628,
+        "variable": "ideal",
+        "value": 6.699592052000001
+      },
+      {
+        "time": 10.45226131,
+        "variable": "ideal",
+        "value": 6.744480387
+      },
+      {
+        "time": 10.65326633,
+        "variable": "ideal",
+        "value": 6.7899133670000005
+      },
+      {
+        "time": 10.85427136,
+        "variable": "ideal",
+        "value": 6.835897599
+      },
+      {
+        "time": 11.05527638,
+        "variable": "ideal",
+        "value": 6.882439773
+      },
+      {
+        "time": 11.25628141,
+        "variable": "ideal",
+        "value": 6.929546658
+      },
+      {
+        "time": 11.45728643,
+        "variable": "ideal",
+        "value": 6.977225106000001
+      },
+      {
+        "time": 11.65829146,
+        "variable": "ideal",
+        "value": 7.025482051
+      },
+      {
+        "time": 11.85929648,
+        "variable": "ideal",
+        "value": 7.074324514
+      },
+      {
+        "time": 12.06030151,
+        "variable": "ideal",
+        "value": 7.1237595979999995
+      },
+      {
+        "time": 12.26130653,
+        "variable": "ideal",
+        "value": 7.173794493
+      },
+      {
+        "time": 12.46231156,
+        "variable": "ideal",
+        "value": 7.224436477999999
+      },
+      {
+        "time": 12.66331658,
+        "variable": "ideal",
+        "value": 7.275692919
+      },
+      {
+        "time": 12.86432161,
+        "variable": "ideal",
+        "value": 7.32757127
+      },
+      {
+        "time": 13.06532663,
+        "variable": "ideal",
+        "value": 7.380079078
+      },
+      {
+        "time": 13.26633166,
+        "variable": "ideal",
+        "value": 7.43322398
+      },
+      {
+        "time": 13.46733668,
+        "variable": "ideal",
+        "value": 7.487013706
+      },
+      {
+        "time": 13.66834171,
+        "variable": "ideal",
+        "value": 7.54145608
+      },
+      {
+        "time": 13.86934673,
+        "variable": "ideal",
+        "value": 7.596559021
+      },
+      {
+        "time": 14.07035176,
+        "variable": "ideal",
+        "value": 7.652330543
+      },
+      {
+        "time": 14.27135678,
+        "variable": "ideal",
+        "value": 7.708778758999999
+      },
+      {
+        "time": 14.47236181,
+        "variable": "ideal",
+        "value": 7.76591188
+      },
+      {
+        "time": 14.67336683,
+        "variable": "ideal",
+        "value": 7.823738214
+      },
+      {
+        "time": 14.87437186,
+        "variable": "ideal",
+        "value": 7.95913075
+      },
+      {
+        "time": 15.07537688,
+        "variable": "ideal",
+        "value": 8.104616121
+      },
+      {
+        "time": 15.27638191,
+        "variable": "ideal",
+        "value": 8.253653351
+      },
+      {
+        "time": 15.47738693,
+        "variable": "ideal",
+        "value": 8.406329155
+      },
+      {
+        "time": 15.67839196,
+        "variable": "ideal",
+        "value": 8.562732364
+      },
+      {
+        "time": 15.87939698,
+        "variable": "ideal",
+        "value": 8.722953979
+      },
+      {
+        "time": 16.08040201,
+        "variable": "ideal",
+        "value": 8.887087222
+      },
+      {
+        "time": 16.28140704,
+        "variable": "ideal",
+        "value": 9.05522759
+      },
+      {
+        "time": 16.48241206,
+        "variable": "ideal",
+        "value": 9.227472914
+      },
+      {
+        "time": 16.68341709,
+        "variable": "ideal",
+        "value": 9.40392341
+      },
+      {
+        "time": 16.88442211,
+        "variable": "ideal",
+        "value": 9.584681744
+      },
+      {
+        "time": 17.08542714,
+        "variable": "ideal",
+        "value": 9.769853085
+      },
+      {
+        "time": 17.28643216,
+        "variable": "ideal",
+        "value": 9.959545174
+      },
+      {
+        "time": 17.48743719,
+        "variable": "ideal",
+        "value": 10.15386838
+      },
+      {
+        "time": 17.68844221,
+        "variable": "ideal",
+        "value": 10.35293576
+      },
+      {
+        "time": 17.88944724,
+        "variable": "ideal",
+        "value": 10.55686315
+      },
+      {
+        "time": 18.09045226,
+        "variable": "ideal",
+        "value": 10.76576919
+      },
+      {
+        "time": 18.29145729,
+        "variable": "ideal",
+        "value": 10.97977543
+      },
+      {
+        "time": 18.49246231,
+        "variable": "ideal",
+        "value": 11.19900639
+      },
+      {
+        "time": 18.69346734,
+        "variable": "ideal",
+        "value": 11.42358963
+      },
+      {
+        "time": 18.89447236,
+        "variable": "ideal",
+        "value": 11.653655800000001
+      },
+      {
+        "time": 19.09547739,
+        "variable": "ideal",
+        "value": 11.88933878
+      },
+      {
+        "time": 19.29648241,
+        "variable": "ideal",
+        "value": 12.1307757
+      },
+      {
+        "time": 19.49748744,
+        "variable": "ideal",
+        "value": 12.37810701
+      },
+      {
+        "time": 19.69849246,
+        "variable": "ideal",
+        "value": 12.63147664
+      },
+      {
+        "time": 19.89949749,
+        "variable": "ideal",
+        "value": 12.891032000000001
+      },
+      {
+        "time": 20.10050251,
+        "variable": "ideal",
+        "value": 13.15692411
+      },
+      {
+        "time": 20.30150754,
+        "variable": "ideal",
+        "value": 13.42930767
+      },
+      {
+        "time": 20.50251256,
+        "variable": "ideal",
+        "value": 13.70834116
+      },
+      {
+        "time": 20.70351759,
+        "variable": "ideal",
+        "value": 13.99418694
+      },
+      {
+        "time": 20.90452261,
+        "variable": "ideal",
+        "value": 14.28701131
+      },
+      {
+        "time": 21.10552764,
+        "variable": "ideal",
+        "value": 14.58698466
+      },
+      {
+        "time": 21.30653266,
+        "variable": "ideal",
+        "value": 14.89428151
+      },
+      {
+        "time": 21.50753769,
+        "variable": "ideal",
+        "value": 15.20908067
+      },
+      {
+        "time": 21.70854271,
+        "variable": "ideal",
+        "value": 15.53156529
+      },
+      {
+        "time": 21.90954774,
+        "variable": "ideal",
+        "value": 15.861923
+      },
+      {
+        "time": 22.11055276,
+        "variable": "ideal",
+        "value": 16.20034602
+      },
+      {
+        "time": 22.31155779,
+        "variable": "ideal",
+        "value": 16.54703125
+      },
+      {
+        "time": 22.51256281,
+        "variable": "ideal",
+        "value": 16.9021804
+      },
+      {
+        "time": 22.71356784,
+        "variable": "ideal",
+        "value": 17.26600011
+      },
+      {
+        "time": 22.91457286,
+        "variable": "ideal",
+        "value": 17.63870207
+      },
+      {
+        "time": 23.11557789,
+        "variable": "ideal",
+        "value": 18.02050312
+      },
+      {
+        "time": 23.31658291,
+        "variable": "ideal",
+        "value": 18.4116254
+      },
+      {
+        "time": 23.51758794,
+        "variable": "ideal",
+        "value": 18.81229649
+      },
+      {
+        "time": 23.71859296,
+        "variable": "ideal",
+        "value": 19.22274951
+      },
+      {
+        "time": 23.91959799,
+        "variable": "ideal",
+        "value": 19.64322327
+      },
+      {
+        "time": 24.12060302,
+        "variable": "ideal",
+        "value": 20.07396241
+      },
+      {
+        "time": 24.32160804,
+        "variable": "ideal",
+        "value": 20.51521756
+      },
+      {
+        "time": 24.52261307,
+        "variable": "ideal",
+        "value": 20.96724545
+      },
+      {
+        "time": 24.72361809,
+        "variable": "ideal",
+        "value": 21.43030908
+      },
+      {
+        "time": 24.92462312,
+        "variable": "ideal",
+        "value": 21.90467789
+      },
+      {
+        "time": 25.12562814,
+        "variable": "ideal",
+        "value": 22.39062786
+      },
+      {
+        "time": 25.32663317,
+        "variable": "ideal",
+        "value": 22.88844175
+      },
+      {
+        "time": 25.52763819,
+        "variable": "ideal",
+        "value": 23.3984092
+      },
+      {
+        "time": 25.72864322,
+        "variable": "ideal",
+        "value": 23.92082692
+      },
+      {
+        "time": 25.92964824,
+        "variable": "ideal",
+        "value": 24.45599887
+      },
+      {
+        "time": 26.13065327,
+        "variable": "ideal",
+        "value": 25.00423644
+      },
+      {
+        "time": 26.33165829,
+        "variable": "ideal",
+        "value": 12.7089358
+      },
+      {
+        "time": 26.53266332,
+        "variable": "ideal",
+        "value": 12.82673743
+      },
+      {
+        "time": 26.73366834,
+        "variable": "ideal",
+        "value": 12.94596838
+      },
+      {
+        "time": 26.93467337,
+        "variable": "ideal",
+        "value": 13.066646
+      },
+      {
+        "time": 27.13567839,
+        "variable": "ideal",
+        "value": 13.18878784
+      },
+      {
+        "time": 27.33668342,
+        "variable": "ideal",
+        "value": 13.31241166
+      },
+      {
+        "time": 27.53768844,
+        "variable": "ideal",
+        "value": 13.43753546
+      },
+      {
+        "time": 27.73869347,
+        "variable": "ideal",
+        "value": 13.56417742
+      },
+      {
+        "time": 27.93969849,
+        "variable": "ideal",
+        "value": 13.69235596
+      },
+      {
+        "time": 28.14070352,
+        "variable": "ideal",
+        "value": 13.82208974
+      },
+      {
+        "time": 28.34170854,
+        "variable": "ideal",
+        "value": 13.95339762
+      },
+      {
+        "time": 28.54271357,
+        "variable": "ideal",
+        "value": 14.086298699999999
+      },
+      {
+        "time": 28.74371859,
+        "variable": "ideal",
+        "value": 14.22081231
+      },
+      {
+        "time": 28.94472362,
+        "variable": "ideal",
+        "value": 14.35695802
+      },
+      {
+        "time": 29.14572864,
+        "variable": "ideal",
+        "value": 14.49475563
+      },
+      {
+        "time": 29.34673367,
+        "variable": "ideal",
+        "value": 14.63422518
+      },
+      {
+        "time": 29.54773869,
+        "variable": "ideal",
+        "value": 14.77538696
+      },
+      {
+        "time": 29.74874372,
+        "variable": "ideal",
+        "value": 14.9182615
+      },
+      {
+        "time": 29.94974874,
+        "variable": "ideal",
+        "value": 15.06286958
+      },
+      {
+        "time": 30.15075377,
+        "variable": "ideal",
+        "value": 15.20923224
+      },
+      {
+        "time": 30.35175879,
+        "variable": "ideal",
+        "value": 15.35737077
+      },
+      {
+        "time": 30.55276382,
+        "variable": "ideal",
+        "value": 15.507306699999997
+      },
+      {
+        "time": 30.75376884,
+        "variable": "ideal",
+        "value": 15.65906186
+      },
+      {
+        "time": 30.95477387,
+        "variable": "ideal",
+        "value": 15.81265831
+      },
+      {
+        "time": 31.15577889,
+        "variable": "ideal",
+        "value": 15.968118400000002
+      },
+      {
+        "time": 31.35678392,
+        "variable": "ideal",
+        "value": 16.12546473
+      },
+      {
+        "time": 31.55778894,
+        "variable": "ideal",
+        "value": 16.28472019
+      },
+      {
+        "time": 31.75879397,
+        "variable": "ideal",
+        "value": 16.44590796
+      },
+      {
+        "time": 31.95979899,
+        "variable": "ideal",
+        "value": 16.60905146
+      },
+      {
+        "time": 32.16080402,
+        "variable": "ideal",
+        "value": 16.77417444
+      },
+      {
+        "time": 32.36180905,
+        "variable": "ideal",
+        "value": 16.94130091
+      },
+      {
+        "time": 32.56281407,
+        "variable": "ideal",
+        "value": 17.11045518
+      },
+      {
+        "time": 32.7638191,
+        "variable": "ideal",
+        "value": 17.28166185
+      },
+      {
+        "time": 32.96482412,
+        "variable": "ideal",
+        "value": 17.45494583
+      },
+      {
+        "time": 33.16582915,
+        "variable": "ideal",
+        "value": 17.63033231
+      },
+      {
+        "time": 33.36683417,
+        "variable": "ideal",
+        "value": 17.80784682
+      },
+      {
+        "time": 33.5678392,
+        "variable": "ideal",
+        "value": 17.98751517
+      },
+      {
+        "time": 33.76884422,
+        "variable": "ideal",
+        "value": 18.16936349
+      },
+      {
+        "time": 33.96984925,
+        "variable": "ideal",
+        "value": 18.35341823
+      },
+      {
+        "time": 34.17085427,
+        "variable": "ideal",
+        "value": 18.53970617
+      },
+      {
+        "time": 34.3718593,
+        "variable": "ideal",
+        "value": 18.7282544
+      },
+      {
+        "time": 34.57286432,
+        "variable": "ideal",
+        "value": 18.91909035
+      },
+      {
+        "time": 34.77386935,
+        "variable": "ideal",
+        "value": 19.11224177
+      },
+      {
+        "time": 34.97487437,
+        "variable": "ideal",
+        "value": 19.30773676
+      },
+      {
+        "time": 35.1758794,
+        "variable": "ideal",
+        "value": 19.50560375
+      },
+      {
+        "time": 35.37688442,
+        "variable": "ideal",
+        "value": 19.70587152
+      },
+      {
+        "time": 35.57788945,
+        "variable": "ideal",
+        "value": 19.90856921
+      },
+      {
+        "time": 35.77889447,
+        "variable": "ideal",
+        "value": 20.1137263
+      },
+      {
+        "time": 35.9798995,
+        "variable": "ideal",
+        "value": 20.32137262
+      },
+      {
+        "time": 36.18090452,
+        "variable": "ideal",
+        "value": 20.53153838
+      },
+      {
+        "time": 36.38190955,
+        "variable": "ideal",
+        "value": 20.74425415
+      },
+      {
+        "time": 36.58291457,
+        "variable": "ideal",
+        "value": 20.95955086
+      },
+      {
+        "time": 36.7839196,
+        "variable": "ideal",
+        "value": 21.17745984
+      },
+      {
+        "time": 36.98492462,
+        "variable": "ideal",
+        "value": 21.39801278
+      },
+      {
+        "time": 37.18592965,
+        "variable": "ideal",
+        "value": 21.62124176
+      },
+      {
+        "time": 37.38693467,
+        "variable": "ideal",
+        "value": 21.84717925
+      },
+      {
+        "time": 37.58793970000001,
+        "variable": "ideal",
+        "value": 22.07585811
+      },
+      {
+        "time": 37.78894472,
+        "variable": "ideal",
+        "value": 22.30731161
+      },
+      {
+        "time": 37.98994975,
+        "variable": "ideal",
+        "value": 22.5415734
+      },
+      {
+        "time": 38.19095477,
+        "variable": "ideal",
+        "value": 22.77867757
+      },
+      {
+        "time": 38.3919598,
+        "variable": "ideal",
+        "value": 23.018658600000002
+      },
+      {
+        "time": 38.59296482,
+        "variable": "ideal",
+        "value": 23.26155139
+      },
+      {
+        "time": 38.79396985,
+        "variable": "ideal",
+        "value": 23.50739128
+      },
+      {
+        "time": 38.99497487,
+        "variable": "ideal",
+        "value": 23.75621403
+      },
+      {
+        "time": 39.1959799,
+        "variable": "ideal",
+        "value": 24.00805582
+      },
+      {
+        "time": 39.39698492,
+        "variable": "ideal",
+        "value": 24.26295329
+      },
+      {
+        "time": 39.59798995,
+        "variable": "ideal",
+        "value": 24.52094351
+      },
+      {
+        "time": 39.79899497,
+        "variable": "ideal",
+        "value": 24.782064000000002
+      },
+      {
+        "time": 40,
+        "variable": "ideal",
+        "value": 25.04635276
+      }
+    ]
+  }
+}
